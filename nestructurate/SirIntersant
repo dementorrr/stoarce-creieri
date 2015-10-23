@@ -1,7 +1,0 @@
-Se da un sir de numere naturale, in care toate numere apar de 2 ori, mai putin un numar. Se cere sa se afle acel numar.
-
-Answer: Pentru a afla acel numar ne folosim de proprietatile XOR-ului: 
-	a ^ a = 0
-	a ^ 0 = 0 ^ a = a
-
-	Daca facem XOR intre toate numerele, vom afla numarul care nu are pereche.
