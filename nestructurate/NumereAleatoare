@@ -1,0 +1,12 @@
+Se da o functie care returneaza un numar intre 0 si 4. Se cere sa se construiasca o functie care genereaza un numar intre 0 si 7.
+
+Raspuns: Putem folosi acea fuctie (rand5()) pentru a primi un nr intre 0 si 4, si ne intereseaza doar ultimul bit. Dupa aceea vom avea 3 biti, si ii vom pune in felul urmator: (primul bit) (al doilea bit) (al treilea bit).
+	 Daca primul bit = 0, al doilea e 1 si al treilea e 1, numarul devine 011 = 3,
+
+int rand7 () {
+    int fst_bit = rand5 () % 2;
+    int snd_bit = rand5 () % 2;
+    int thd_bit = rand5 () % 2;
+
+    return fst_bit << 2 + snd_bit << 1 + thd_bit;
+}
