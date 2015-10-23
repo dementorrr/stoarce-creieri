@@ -1,3 +1,0 @@
-Given an array of integers where every int has exactly one duplicate except one, find the number with odd occuring number.
-
-Answer: You must XOR all numbers together because a ^ a = 0 and a ^ 0 = a for any a.

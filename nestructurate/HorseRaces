@@ -1,9 +1,0 @@
-Given 25 horses, find the best 3 horses with minimum number of races. Each race can have only 5 horses. You don't have a timer.
-
-Answer: 7 races.
-1) divide 25 horses in 5 groups and you have 5 winners.
-2) race these 5 winners and the winner of this race is the fastest horse, 2nd and 3rd horse (along with their respective groups) are candidate for remaining 2 positions while we can plainly reject remaining 10 horses belonging to horses who stood 4th n 5th in 6th race.
-3) for final race we choose following horse
--> those who came 2nd and 3rd in 1st group
--> those who came 1st and 2nd in 2nd group
--> the one that came 2nd in 3rd group.
