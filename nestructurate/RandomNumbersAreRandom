@@ -1,0 +1,11 @@
+Given a random generator rand(5) which generates numbers between 0 to 4. How do you generate numbers between 0 to 6, I.e. Implement rand(7).
+
+Answer: You can use rand (5) just to find the last bit of any number then use that function to set 3 bits (111 (2) = 7 (10)), something like:
+
+int rand7 () {
+    int fst_bit = rand5 () % 2;
+    int snd_bit = rand5 () % 2;
+    int thd_bit = rand5 () % 2;
+
+    return fst_bit << 2 + snd_bit << 1 + thd_bit;
+}
